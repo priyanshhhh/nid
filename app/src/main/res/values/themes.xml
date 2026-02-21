@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.NidaAI" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/nida_purple_500</item>
+        <item name="colorPrimaryVariant">@color/nida_purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/nida_teal_200</item>
+        <item name="colorSecondaryVariant">@color/nida_teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+    </style>
+
+    <style name="Theme.NidaAI.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.NidaAI.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.NidaAI.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Splash Screen Theme -->
+    <style name="Theme.NidaAI.SplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/nida_background_light</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_nida_logo</item>
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <item name="postSplashScreenTheme">@style/Theme.NidaAI</item>
+    </style>
+
+</resources>
